@@ -1,9 +1,32 @@
-
-<style>
-* { box-sizing: border-box; margin: 0; padding: 0; }
-.app { max-width: 390px; margin: 0 auto; background: #fff; font-family: -apple-system, 'Hiragino Sans', 'Yu Gothic UI', sans-serif; position: relative; min-height: 780px; overflow: hidden; }
-.screen { display: none; flex-direction: column; min-height: 780px; background: #fff; }
-.screen.active { display: flex; }
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>エントリー受付</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+    body { background: #f0f0f0; }
+    
+    .app { 
+      max-width: 390px; 
+      margin: 0 auto; 
+      background: #fff; 
+      font-family: -apple-system, 'Hiragino Sans', 'Yu Gothic UI', sans-serif; 
+      position: relative; 
+      min-height: 100vh; 
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    
+    .screen { 
+      display: none; 
+      flex-direction: column; 
+      flex: 1;
+      background: #fff; 
+    }
+    .screen.active { display: flex; }
 
 .nav { display: flex; align-items: center; padding: 14px 16px 12px; border-bottom: 0.5px solid #e5e5e5; background: #fff; flex-shrink: 0; }
 .nav-back { background: none; border: none; color: #1a7abf; font-size: 22px; cursor: pointer; padding: 0 8px 0 0; line-height: 1; }
@@ -538,3 +561,5 @@ function resetAndGoList() {
   goTo('screen-list');
 }
 </script>
+</body>
+</html>
